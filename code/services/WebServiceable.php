@@ -5,6 +5,6 @@
  *
  * @author Marcus Nyeholt <marcus@silverstripe.com.au>
  */
-interface WebServiceable {
-	
+interface WebServiceable
+{
 }

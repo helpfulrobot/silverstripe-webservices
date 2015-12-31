@@ -8,26 +8,29 @@
  * 
  * @author Marcus Nyeholt <marcus@silverstripe.com.au>
  */
-class DummyWebService implements WebServiceable {
-	
-	/**
-	 * Something that silverstripe imposes!
-	 */
-	public function __construct() {
-		
-	}
-	
-	public function webEnabledMethods() {
-		return array(
-			'myMethod'		=> 'GET',
-		);
-	}
+class DummyWebService implements WebServiceable
+{
+    
+    /**
+     * Something that silverstripe imposes!
+     */
+    public function __construct()
+    {
+    }
+    
+    public function webEnabledMethods()
+    {
+        return array(
+            'myMethod'        => 'GET',
+        );
+    }
 
-	public function myMethod($param) {
-		return array(
-			'SomeParam'			=> 'Goes here',
-			'Boolean'			=> true,
-			'Return'			=> $param,
-		);
-	}
+    public function myMethod($param)
+    {
+        return array(
+            'SomeParam'            => 'Goes here',
+            'Boolean'            => true,
+            'Return'            => $param,
+        );
+    }
 }
